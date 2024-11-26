@@ -1,0 +1,11 @@
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/bin/Debug/net8.0/Domain.deps.json
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/bin/Debug/net8.0/Domain.dll
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/bin/Debug/net8.0/Domain.pdb
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/obj/Debug/net8.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/obj/Debug/net8.0/Domain.AssemblyInfoInputs.cache
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/obj/Debug/net8.0/Domain.AssemblyInfo.cs
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/obj/Debug/net8.0/Domain.csproj.CoreCompileInputs.cache
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/obj/Debug/net8.0/Domain.dll
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/obj/Debug/net8.0/refint/Domain.dll
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/obj/Debug/net8.0/Domain.pdb
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/obj/Debug/net8.0/ref/Domain.dll

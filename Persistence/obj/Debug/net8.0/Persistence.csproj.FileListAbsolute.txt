@@ -1,0 +1,15 @@
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/bin/Debug/net8.0/Persistence.deps.json
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/bin/Debug/net8.0/Persistence.dll
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/bin/Debug/net8.0/Persistence.pdb
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/bin/Debug/net8.0/Domain.dll
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/bin/Debug/net8.0/Domain.pdb
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/obj/Debug/net8.0/Persistence.csproj.AssemblyReference.cache
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/obj/Debug/net8.0/Persistence.GeneratedMSBuildEditorConfig.editorconfig
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/obj/Debug/net8.0/Persistence.AssemblyInfoInputs.cache
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/obj/Debug/net8.0/Persistence.AssemblyInfo.cs
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/obj/Debug/net8.0/Persistence.csproj.CoreCompileInputs.cache
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/obj/Debug/net8.0/Persiste.61C28332.Up2Date
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/obj/Debug/net8.0/Persistence.dll
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/obj/Debug/net8.0/refint/Persistence.dll
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/obj/Debug/net8.0/Persistence.pdb
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/obj/Debug/net8.0/ref/Persistence.dll
