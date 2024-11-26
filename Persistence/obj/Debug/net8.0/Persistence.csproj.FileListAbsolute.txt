@@ -1,4 +1,5 @@
 /home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/bin/Debug/net8.0/Persistence.deps.json
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/bin/Debug/net8.0/Persistence.runtimeconfig.json
 /home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/bin/Debug/net8.0/Persistence.dll
 /home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/bin/Debug/net8.0/Persistence.pdb
 /home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/bin/Debug/net8.0/Domain.dll
@@ -12,4 +13,5 @@
 /home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/obj/Debug/net8.0/Persistence.dll
 /home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/obj/Debug/net8.0/refint/Persistence.dll
 /home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/obj/Debug/net8.0/Persistence.pdb
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/obj/Debug/net8.0/Persistence.genruntimeconfig.cache
 /home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/obj/Debug/net8.0/ref/Persistence.dll
