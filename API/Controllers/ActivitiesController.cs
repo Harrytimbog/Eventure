@@ -22,7 +22,7 @@ namespace API.Controllers
 
         public async Task<ActionResult<Activity>> GetACtivity(Guid id)
         {
-            return Ok();
+            return await Mediator.Send(new ActivityDetails.Query { Id = id });
         }
     }
 }
