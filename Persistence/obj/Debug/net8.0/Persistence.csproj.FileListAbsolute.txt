@@ -15,3 +15,4 @@
 /home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/obj/Debug/net8.0/Persistence.pdb
 /home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/obj/Debug/net8.0/Persistence.genruntimeconfig.cache
 /home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/obj/Debug/net8.0/ref/Persistence.dll
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/obj/Debug/net8.0/Persistence.sourcelink.json

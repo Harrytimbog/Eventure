@@ -9,3 +9,4 @@
 /home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/obj/Debug/net8.0/refint/Domain.dll
 /home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/obj/Debug/net8.0/Domain.pdb
 /home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/obj/Debug/net8.0/ref/Domain.dll
+/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/obj/Debug/net8.0/Domain.sourcelink.json
