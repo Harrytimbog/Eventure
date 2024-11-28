@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "TvrS/wbcaqo=",
+  "dgSpecHash": "VFQprO/TVmA=",
   "success": true,
   "projectFilePath": "/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Application/Application.csproj",
   "expectedPackageFiles": [
+    "/home/acer/.nuget/packages/mediatr/12.4.1/mediatr.12.4.1.nupkg.sha512",
+    "/home/acer/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/home/acer/.nuget/packages/microsoft.data.sqlite.core/8.0.0/microsoft.data.sqlite.core.8.0.0.nupkg.sha512",
     "/home/acer/.nuget/packages/microsoft.entityframeworkcore/8.0.0/microsoft.entityframeworkcore.8.0.0.nupkg.sha512",
     "/home/acer/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.0/microsoft.entityframeworkcore.abstractions.8.0.0.nupkg.sha512",
