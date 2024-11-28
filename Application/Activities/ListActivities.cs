@@ -16,6 +16,7 @@ namespace Application.Activities
         {
             private readonly DataContext _context;
 
+            // The DataContext is injected into the Handler
             public Handler(DataContext context)
             {
                 _context = context;
