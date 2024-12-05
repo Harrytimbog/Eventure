@@ -5,6 +5,16 @@
 
 # dotenv files
 .env
+API/bin/
+API/obj/
+Application/bin/
+Application/obj/
+Domain/bin/
+Domain/obj/
+Persistence/bin/
+Persistence/obj/
+bin/
+obj/
 
 appsettings.json
 
