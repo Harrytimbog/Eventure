@@ -2,10 +2,11 @@ import { Button, Card, Image } from "semantic-ui-react"
 import { Activity } from "../../../app/models/activity"
 
 interface IProps {
-    activity: Activity
+    activity: Activity;
+    cancelSelectActivity: () => void;
 }
 
-const ActivityDetails = ({ activity }: IProps) => {
+const ActivityDetails = ({ activity, cancelSelectActivity }: IProps) => {
     return (
         <>
             <Card fluid>
@@ -22,7 +23,7 @@ const ActivityDetails = ({ activity }: IProps) => {
                 <Card.Content extra>
                     <Button.Group widths='2'>
                         <Button basic color='blue' content='Edit' />
-                        <Button basic color='grey' content='Cancel' />
+                        <Button onClick={cancelSelectActivity} basic color='grey' content='Cancel' />
                     </Button.Group>
                 </Card.Content>
             </Card>
