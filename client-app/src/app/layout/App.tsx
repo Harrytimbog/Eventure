@@ -17,7 +17,7 @@ function App() {
   }, [])
 
 
-  function handleSelecteActivity(id: string) {
+  function handleSelectActivity(id: string) {
     setSelectedActivity(activities.find(x => x.id === id));
   }
 
@@ -26,12 +26,29 @@ function App() {
   }
 
   function handleFormOpen(id?: string) {
-    id ? handleSelecteActivity(id) : handleCancelSelectActivity();
+    if (id) {
+      handleSelectActivity(id);
+    } else {
+      handleCancelSelectActivity();
+    }
     setEditMode(true);
   }
 
   function handleFormClose() {
     setEditMode(false);
+  }
+
+  function handleCreateOrEditActivity(activity: Activity) {
+    if (activity.id) {
+      setActivities([
+        ...activities.filter(x => x.id !== activity.id),
+        activity,
+      ]);
+    } else {
+      setActivities([...activities, activity]);
+    }
+    setEditMode(false);
+    setSelectedActivity(activity);
   }
 
   return (
@@ -41,11 +58,12 @@ function App() {
         <ActivityDashboard
           activities={activities}
           selectedActivity={selectedActivity}
-          selectActivity={handleSelecteActivity}
+          selectActivity={handleSelectActivity}
           cancelSelectActivity={handleCancelSelectActivity}
           editMode={editMode}
           openForm={handleFormOpen}
           closeForm={handleFormClose}
+          createOrEdit={handleCreateOrEditActivity}
         />
 
       </Container>

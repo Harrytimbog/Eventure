@@ -5,9 +5,10 @@ import { ChangeEvent, useState } from "react";
 interface IProps {
     activity: Activity | undefined;
     closeForm: () => void;
+    createOrEdit: (activity: Activity) => void;
 }
 
-const ActivityForm = ({ activity: selectedActivity, closeForm }: IProps) => {
+const ActivityForm = ({ activity: selectedActivity, closeForm, createOrEdit }: IProps) => {
     const initialState = selectedActivity ?? {
         id: '',
         title: '',
@@ -21,7 +22,7 @@ const ActivityForm = ({ activity: selectedActivity, closeForm }: IProps) => {
     const [activity, setActivity] = useState(initialState);
 
     function handleSubmit() {
-        console.log(activity);
+        createOrEdit(activity);
     }
 
     function handleInputChange(event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
