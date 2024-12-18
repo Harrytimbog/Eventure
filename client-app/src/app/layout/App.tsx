@@ -75,7 +75,14 @@ function App() {
   }
 
   function handleDeleteActivity(id: string) {
-    setActivities([...activities.filter(x => x.id !== id)]);
+    // setSubmitting to true
+    setSubmitting(true);
+
+    // delete the activity
+    agent.Activities.delete(id).then(() => {
+      setActivities([...activities.filter(x => x.id !== id)]);
+      setSubmitting(false);
+    });
   }
 
   if (loading) return <LoadingComponent content='Loading app' /> // if loading is true, show loading component
