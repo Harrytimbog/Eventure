@@ -1,16 +1,12 @@
 import { Button, Form, Segment } from "semantic-ui-react";
-import { Activity } from "../../../app/models/activity";
 import { ChangeEvent, useState } from "react";
 import { useStore } from "../../../app/stores/store";
+import { observer } from "mobx-react-lite";
 
-interface IProps {
-    createOrEdit: (activity: Activity) => void;
-    submitting: boolean;
-}
 
-const ActivityForm = ({ createOrEdit, submitting }: IProps) => {
+const ActivityForm = () => {
 
-    const { closeForm, selectedActivity } = useStore().activityStore;
+    const { closeForm, selectedActivity, createActivity, updateActivity, loading } = useStore().activityStore;
 
     const initialState = selectedActivity ?? {
         id: '',
@@ -25,7 +21,8 @@ const ActivityForm = ({ createOrEdit, submitting }: IProps) => {
     const [activity, setActivity] = useState(initialState);
 
     function handleSubmit() {
-        createOrEdit(activity);
+        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+        activity.id ? updateActivity(activity) : createActivity(activity);
     }
 
     function handleInputChange(event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
@@ -42,11 +39,11 @@ const ActivityForm = ({ createOrEdit, submitting }: IProps) => {
                 <Form.Input type='date' placeholder='Date' value={activity.date} name="date" onChange={handleInputChange} />
                 <Form.Input placeholder='City' value={activity.city} name="city" onChange={handleInputChange} />
                 <Form.Input placeholder='Venue' value={activity.venue} name="venue" onChange={handleInputChange} />
-                <Button floated='right' positive type='submit' content='Submit' loading={submitting} />
+                <Button floated='right' positive type='submit' content='Submit' loading={loading} />
                 <Button onClick={closeForm} floated='right' type='button' content='Cancel' />
             </Form>
         </Segment>
     )
 }
 
-export default ActivityForm
+export default observer(ActivityForm)

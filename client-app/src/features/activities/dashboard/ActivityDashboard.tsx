@@ -8,13 +8,12 @@ import { observer } from 'mobx-react-lite'
 
 interface IProps {
     activities: Activity[];
-    createOrEdit: (activity: Activity) => void;
     deleteActivity: (id: string) => void;
     submitting: boolean;
 }
 
 
-const ActivityDashboard = ({ activities, createOrEdit, deleteActivity, submitting }: IProps) => {
+const ActivityDashboard = ({ activities, deleteActivity, submitting }: IProps) => {
 
     const { activityStore } = useStore();
 
@@ -31,8 +30,6 @@ const ActivityDashboard = ({ activities, createOrEdit, deleteActivity, submittin
                         />}
                     {editMode &&
                         <ActivityForm
-                            createOrEdit={createOrEdit}
-                            submitting={submitting}
                         />
                     }
                 </Grid.Column>
