@@ -1,5 +1,6 @@
 import { makeAutoObservable } from "mobx";
 import agent from "../../api/agent";
+import { Activity } from "../models/activity";
 
 export default class ActivityStore {
 
@@ -16,7 +17,7 @@ export default class ActivityStore {
 
     loadActivities = async () => {
 
-        this.loadingInitial = true;
+        this.setLoadingInitial(true);
         try {
             const activities = await agent.Activities.list();
             activities.forEach(activity => {
@@ -24,10 +25,15 @@ export default class ActivityStore {
                 this.activities.push(activity);
             })
 
-            this.loadingInitial = false;
+            this.setLoadingInitial(false);
         } catch (error) {
             console.log(error);
-            this.loadingInitial = false;
+            this.setLoadingInitial(false);
         }
+
+    }
+
+    setLoadingInitial = (state: boolean) => {
+        this.loadingInitial = state;
     }
 }
