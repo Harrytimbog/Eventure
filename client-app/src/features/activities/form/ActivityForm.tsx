@@ -1,15 +1,17 @@
 import { Button, Form, Segment } from "semantic-ui-react";
 import { Activity } from "../../../app/models/activity";
 import { ChangeEvent, useState } from "react";
+import { useStore } from "../../../app/stores/store";
 
 interface IProps {
-    activity: Activity | undefined;
-    closeForm: () => void;
     createOrEdit: (activity: Activity) => void;
     submitting: boolean;
 }
 
-const ActivityForm = ({ activity: selectedActivity, closeForm, createOrEdit, submitting }: IProps) => {
+const ActivityForm = ({ createOrEdit, submitting }: IProps) => {
+
+    const { closeForm, selectedActivity } = useStore().activityStore;
+
     const initialState = selectedActivity ?? {
         id: '',
         title: '',

@@ -2,38 +2,35 @@ import { Grid } from 'semantic-ui-react'
 import { Activity } from '../../../app/models/activity'
 import ActivityList from './ActivityList'
 import ActivityDetails from '../details/ActivityDetails'
+import { useStore } from '../../../app/stores/store'
 import ActivityForm from '../form/ActivityForm'
+import { observer } from 'mobx-react-lite'
 
 interface IProps {
     activities: Activity[];
-    selectedActivity: Activity | undefined;
-    selectActivity: (id: string) => void;
-    cancelSelectActivity: () => void;
-    editMode: boolean;
-    openForm: (id: string) => void;
-    closeForm: () => void;
     createOrEdit: (activity: Activity) => void;
     deleteActivity: (id: string) => void;
     submitting: boolean;
 }
 
 
-const ActivityDashboard = ({ activities,
-    selectedActivity, selectActivity, cancelSelectActivity, editMode, openForm, closeForm, createOrEdit, deleteActivity, submitting }: IProps) => {
+const ActivityDashboard = ({ activities, createOrEdit, deleteActivity, submitting }: IProps) => {
+
+    const { activityStore } = useStore();
+
+    const { selectedActivity, editMode } = activityStore;
     return (
         <>
             <Grid>
                 <Grid.Column width='10'>
-                    <ActivityList activities={activities} selectActivity={selectActivity} deleteActivity={deleteActivity} submitting={submitting} />
+                    <ActivityList activities={activities} deleteActivity={deleteActivity} submitting={submitting} />
                 </Grid.Column>
                 <Grid.Column width='6'>
                     {selectedActivity && !editMode &&
-                        <ActivityDetails activity={selectedActivity} cancelSelectActivity={cancelSelectActivity} openForm={openForm}
+                        <ActivityDetails
                         />}
                     {editMode &&
                         <ActivityForm
-                            closeForm={closeForm}
-                            activity={selectedActivity}
                             createOrEdit={createOrEdit}
                             submitting={submitting}
                         />
@@ -44,4 +41,4 @@ const ActivityDashboard = ({ activities,
     )
 }
 
-export default ActivityDashboard
+export default observer(ActivityDashboard)
