@@ -16,7 +16,7 @@ const ActivityList = ({ activities, selectActivity, deleteActivity, submitting }
 
     const handleActivityDelete = (e: SyntheticEvent<HTMLButtonElement>, id: string) => {
         setTarget(e.currentTarget.name);
-        deleteActivity(id); e
+        deleteActivity(id); // Call deleteActivity function from parent component
     }
 
     return (
