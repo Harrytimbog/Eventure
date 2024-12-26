@@ -49,7 +49,11 @@ export default class ActivityStore {
     }
 
     openForm = (id?: string) => {
-        id ? this.selectActivity(id) : this.selectedActivity = undefined;
+        if (id) {
+            this.selectActivity(id);
+        } else {
+            this.selectedActivity = undefined;
+        }
         this.editMode = true;
     }
 
