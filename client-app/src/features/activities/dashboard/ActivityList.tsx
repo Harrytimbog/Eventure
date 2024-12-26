@@ -1,16 +1,12 @@
 import { Button, Item, Label, Segment } from "semantic-ui-react"
-import { Activity } from "../../../app/models/activity"
 import { SyntheticEvent, useState } from "react";
 import { useStore } from "../../../app/stores/store";
+import { observer } from "mobx-react-lite";
 
 
-interface IProps {
-    activities: Activity[];
-    deleteActivity: (id: string) => void;
-    submitting: boolean;
-}
+const ActivityList = () => {
+    const { selectActivity, deleteActivity, activities, loading } = useStore().activityStore;
 
-const ActivityList = ({ activities, deleteActivity, submitting }: IProps) => {
 
     const [target, setTarget] = useState('');
 
@@ -20,7 +16,6 @@ const ActivityList = ({ activities, deleteActivity, submitting }: IProps) => {
     }
 
 
-    const { selectActivity } = useStore().activityStore;
     return (
         <>
             <Segment>
@@ -29,7 +24,7 @@ const ActivityList = ({ activities, deleteActivity, submitting }: IProps) => {
                         <Item key={activity.id}>
                             <Item.Content>
                                 <Item.Header as='a'>{activity.title}</Item.Header>
-                                <Item.Meta>{activity.date}</Item.Meta>
+                                <Item.Meta>{activity.date}{activity.id}</Item.Meta>
                                 <Item.Description>
                                     <div>{activity.description}</div>
                                     <div>{activity.city}, {activity.venue}</div>
@@ -38,7 +33,7 @@ const ActivityList = ({ activities, deleteActivity, submitting }: IProps) => {
                                     <Button onClick={() => selectActivity(activity.id)} floated='right' content='View' color='blue' />
                                     <Button
                                         name={activity.id}
-                                        loading={submitting && target === activity.id}
+                                        loading={loading && target === activity.id}
                                         onClick={(e) => handleActivityDelete(e, activity.id)}
                                         floated='right'
                                         content='Delete'
@@ -55,4 +50,4 @@ const ActivityList = ({ activities, deleteActivity, submitting }: IProps) => {
     )
 }
 
-export default ActivityList
+export default observer(ActivityList)
