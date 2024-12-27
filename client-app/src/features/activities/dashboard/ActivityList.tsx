@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 
 const ActivityList = () => {
-    const { selectActivity, deleteActivity, activitiesByDate, loading } = useStore().activityStore;
+    const { deleteActivity, activitiesByDate, loading } = useStore().activityStore;
 
 
     const [target, setTarget] = useState('');
