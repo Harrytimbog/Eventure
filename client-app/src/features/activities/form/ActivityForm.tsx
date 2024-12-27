@@ -1,14 +1,19 @@
 import { Button, Form, Segment } from "semantic-ui-react";
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import { useStore } from "../../../app/stores/store";
 import { observer } from "mobx-react-lite";
+import { useParams } from "react-router-dom";
+import { Activity } from "../../../app/models/activity";
+import LoadingComponent from "../../../app/layout/LoadingComponent";
 
 
 const ActivityForm = () => {
 
-    const { selectedActivity, createActivity, updateActivity, loading } = useStore().activityStore;
+    const { createActivity, updateActivity, loading, loadActivity, loadingInitial } = useStore().activityStore;
 
-    const initialState = selectedActivity ?? {
+    const { id } = useParams();
+
+    const [activity, setActivity] = useState<Activity>({
         id: '',
         title: '',
         category: '',
@@ -16,9 +21,12 @@ const ActivityForm = () => {
         date: '',
         city: '',
         venue: ''
-    }
+    });
 
-    const [activity, setActivity] = useState(initialState);
+
+    useEffect(() => {
+        if (id) loadActivity(id).then(activity => setActivity(activity!));
+    }, [id, loadActivity]);
 
     function handleSubmit() {
         // eslint-disable-next-line @typescript-eslint/no-unused-expressions
@@ -29,6 +37,8 @@ const ActivityForm = () => {
         const { name, value } = event.target;
         setActivity({ ...activity, [name]: value });
     }
+
+    if (loadingInitial) return <LoadingComponent content='Loading activity...' />
 
     return (
         <Segment clearing>
