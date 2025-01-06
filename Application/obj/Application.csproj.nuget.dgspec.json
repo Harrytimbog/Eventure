@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Application/Application.csproj": {}
+    "/root/code/Harrytimbog/Eventure/Application/Application.csproj": {}
   },
   "projects": {
-    "/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Application/Application.csproj": {
+    "/root/code/Harrytimbog/Eventure/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Application/Application.csproj",
+        "projectUniqueName": "/root/code/Harrytimbog/Eventure/Application/Application.csproj",
         "projectName": "Application",
-        "projectPath": "/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Application/Application.csproj",
-        "packagesPath": "/home/acer/.nuget/packages/",
-        "outputPath": "/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Application/obj/",
+        "projectPath": "/root/code/Harrytimbog/Eventure/Application/Application.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/root/code/Harrytimbog/Eventure/Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/acer/.nuget/NuGet/NuGet.Config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,11 +26,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/Domain.csproj": {
-                "projectPath": "/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/Domain.csproj"
+              "/root/code/Harrytimbog/Eventure/Domain/Domain.csproj": {
+                "projectPath": "/root/code/Harrytimbog/Eventure/Domain/Domain.csproj"
               },
-              "/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/Persistence.csproj": {
-                "projectPath": "/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/Persistence.csproj"
+              "/root/code/Harrytimbog/Eventure/Persistence/Persistence.csproj": {
+                "projectPath": "/root/code/Harrytimbog/Eventure/Persistence/Persistence.csproj"
               }
             }
           }
@@ -53,6 +53,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.2.2, )"
             },
             "MediatR": {
               "target": "Package",
@@ -79,17 +83,17 @@
         }
       }
     },
-    "/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/Domain.csproj": {
+    "/root/code/Harrytimbog/Eventure/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/Domain.csproj",
+        "projectUniqueName": "/root/code/Harrytimbog/Eventure/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/Domain.csproj",
-        "packagesPath": "/home/acer/.nuget/packages/",
-        "outputPath": "/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/obj/",
+        "projectPath": "/root/code/Harrytimbog/Eventure/Domain/Domain.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/root/code/Harrytimbog/Eventure/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/acer/.nuget/NuGet/NuGet.Config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -137,17 +141,17 @@
         }
       }
     },
-    "/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/Persistence.csproj": {
+    "/root/code/Harrytimbog/Eventure/Persistence/Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/Persistence.csproj",
+        "projectUniqueName": "/root/code/Harrytimbog/Eventure/Persistence/Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/Persistence.csproj",
-        "packagesPath": "/home/acer/.nuget/packages/",
-        "outputPath": "/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Persistence/obj/",
+        "projectPath": "/root/code/Harrytimbog/Eventure/Persistence/Persistence.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/root/code/Harrytimbog/Eventure/Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/acer/.nuget/NuGet/NuGet.Config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -159,8 +163,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/Domain.csproj": {
-                "projectPath": "/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/Domain.csproj"
+              "/root/code/Harrytimbog/Eventure/Domain/Domain.csproj": {
+                "projectPath": "/root/code/Harrytimbog/Eventure/Domain/Domain.csproj"
               }
             }
           }

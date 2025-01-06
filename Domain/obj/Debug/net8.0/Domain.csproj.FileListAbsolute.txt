@@ -10,3 +10,15 @@
 /home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/obj/Debug/net8.0/Domain.pdb
 /home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/obj/Debug/net8.0/ref/Domain.dll
 /home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/obj/Debug/net8.0/Domain.sourcelink.json
+/root/code/Harrytimbog/Eventure/Domain/bin/Debug/net8.0/Domain.deps.json
+/root/code/Harrytimbog/Eventure/Domain/bin/Debug/net8.0/Domain.dll
+/root/code/Harrytimbog/Eventure/Domain/bin/Debug/net8.0/Domain.pdb
+/root/code/Harrytimbog/Eventure/Domain/obj/Debug/net8.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/root/code/Harrytimbog/Eventure/Domain/obj/Debug/net8.0/Domain.AssemblyInfoInputs.cache
+/root/code/Harrytimbog/Eventure/Domain/obj/Debug/net8.0/Domain.AssemblyInfo.cs
+/root/code/Harrytimbog/Eventure/Domain/obj/Debug/net8.0/Domain.csproj.CoreCompileInputs.cache
+/root/code/Harrytimbog/Eventure/Domain/obj/Debug/net8.0/Domain.sourcelink.json
+/root/code/Harrytimbog/Eventure/Domain/obj/Debug/net8.0/Domain.dll
+/root/code/Harrytimbog/Eventure/Domain/obj/Debug/net8.0/refint/Domain.dll
+/root/code/Harrytimbog/Eventure/Domain/obj/Debug/net8.0/Domain.pdb
+/root/code/Harrytimbog/Eventure/Domain/obj/Debug/net8.0/ref/Domain.dll

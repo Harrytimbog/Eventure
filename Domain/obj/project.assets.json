@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/home/acer/.nuget/packages/": {}
+    "/root/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/Domain.csproj",
+      "projectUniqueName": "/root/code/Harrytimbog/Eventure/Domain/Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/Domain.csproj",
-      "packagesPath": "/home/acer/.nuget/packages/",
-      "outputPath": "/home/acer/code/Harrytimbog/CSharp/PROJECTS/Reactivities/Domain/obj/",
+      "projectPath": "/root/code/Harrytimbog/Eventure/Domain/Domain.csproj",
+      "packagesPath": "/root/.nuget/packages/",
+      "outputPath": "/root/code/Harrytimbog/Eventure/Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/acer/.nuget/NuGet/NuGet.Config"
+        "/root/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
