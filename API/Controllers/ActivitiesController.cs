@@ -17,9 +17,9 @@ namespace API.Controllers
 
         [HttpGet("{id}")] //api/activities/fdfkdffdfd
 
-        public async Task<ActionResult<Activity>> GetACtivity(Guid id)
+        public async Task<IActionResult> GetACtivity(Guid id)
         {
-            return await Mediator.Send(new ActivityDetails.Query { Id = id });
+            return HandleResult(await Mediator.Send(new ActivityDetails.Query { Id = id }));
         }
 
         [HttpPost]
