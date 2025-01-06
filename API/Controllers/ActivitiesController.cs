@@ -34,16 +34,15 @@ namespace API.Controllers
             // Set the ID of the activity to the ID of the parameter
             activity.Id = id;
             // Send the activity to the Edit handler
-            await Mediator.Send(new Edit.Command { Activity = activity });
             // Return a 200 OK response
-            return Ok();
+            return HandleResult(await Mediator.Send(new Edit.Command { Activity = activity }));
+           
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteActivity(Guid id)
         {
-            await Mediator.Send(new Delete.Command { Id = id });
-            return Ok();
+            return HandleResult(await Mediator.Send(new Delete.Command { Id = id }));
         }
     }
 }
