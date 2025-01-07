@@ -12,6 +12,7 @@ import MyTextInput from "../../../app/common/form/MyTextInput";
 import MyTextarea from "../../../app/common/form/MyTextarea";
 import MySelectInput from "../../../app/common/form/MySelectInput";
 import { CategoryOptions } from "../../../app/common/options/CategoryOptions";
+import MyDateInput from "../../../app/common/form/MyDateInput";
 
 const ActivityForm = () => {
 
@@ -70,7 +71,13 @@ const ActivityForm = () => {
                         <MyTextInput name="title" placeholder="Title" />
                         <MyTextarea rows={3} placeholder='Description' name="description"  />
                         <MySelectInput options={CategoryOptions} placeholder='Category' name="category"  />
-                        <MyTextInput placeholder='Date' name="date"  />
+                        <MyDateInput
+                          placeholderText='Date' 
+                          name="date"
+                          showTimeSelect
+                          timeCaption="time"
+                          dateFormat='MMMM d, yyy h:mm aa'
+                        />
                         <MyTextInput placeholder='City' name="city"  />
                         <MyTextInput placeholder='Venue' name="venue"  />
                         <Button floated='right' positive type='submit' content='Submit' loading={loading} />
