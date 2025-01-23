@@ -494,3 +494,12 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+
+# Ignore debug files and folders
+bin/
+obj/
+*.pdb
+*.dll
+*.cache
+*.db
