@@ -22,3 +22,4 @@
 /root/code/Harrytimbog/Eventure/Domain/obj/Debug/net8.0/refint/Domain.dll
 /root/code/Harrytimbog/Eventure/Domain/obj/Debug/net8.0/Domain.pdb
 /root/code/Harrytimbog/Eventure/Domain/obj/Debug/net8.0/ref/Domain.dll
+/root/code/Harrytimbog/Eventure/Domain/obj/Debug/net8.0/Domain.csproj.AssemblyReference.cache
